@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--指定页面编码格式-->
+    <meta charset="UTF-8">
+    <!--指定页头信息-->
+    <title>图文混排展示课程信息</title>
+
+    <style>
+        * {                    /*设置所有标签的共有样式*/
+            padding: 0;      /*设置所有标签的内边距*/
+            margin: 0;      /*设置所有标签的外边距*/
+        }
+
+        .cont {                  /*通过类选择器设置主题内容样式*/
+            width: 1140px;      /*设置宽度*/
+            margin: 20px auto;      /*通过外边距设置内容的位置*/
+        }
+
+        .color {
+            color: #51bcff;      /*设置字体颜色*/
+            height: 45px;      /*设置标签高度*/
+        }
+
+        .big {                      /*设置“新书速递”中第一个字的样式*/
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .more {                        /*设置文字“更多”的样式*/
+            background: #343434;      /*设置背景颜色*/
+            color: #fff;
+        }
+
+        .list img {                          /*设置图片样式*/
+            margin-top: 10px;      /*设置向上的外边距*/
+            height: 203px;      /*设置图片高度*/
+        }
+
+        .list {                              /*设置图书列表的样式*/
+            margin-top: 20px;
+            width: 215px;      /*设置宽度*/
+            margin-left: 11px;      /*设置向左的外边距*/
+            float: left;      /*设置浮动*/
+            border: 1px silver solid;      /*设置边框样式*/
+            text-align: center;      /*设置文本对齐方式*/
+        }
+
+        p {                            /*设置所有p标签的样式*/
+            padding: 0 10px;      /*设置内边距*/
+            height: 40px;
+            line-height: 40px;      /*设置行高*/
+        }
+
+        .price {
+            color: #ff0c2a;
+            float: left;
+        }
+
+        .e_book {                             /*设置所有“电子书”文字样式*/
+            display: inline-block;                  /*在页面中显示方式*/
+            height: 26px;
+            line-height: 26px;
+            margin: 10px 0;
+            color: #fff;                    /*设置文字颜色*/
+            background: #ff0c2a;
+            font-size: 12px;
+            padding: 0 4px;
+            float: right;
+        }
+
+        a {
+            float: right;
+            line-height: 40px;                 /*设置行高*/
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="cont">
+    <p class="color"><span class="big">新</span>书速递</p>
+    <p class="more"><a>更多></a></p>
+    <div>
+        <div class="list">
+            <img src="img/book1.png">
+            <p>零基础学C++</p>
+            <p><span class="price">￥79.8</span><span class="e_book">数字书</span></p>
+        </div>
+        <div class="list">
+            <img src="img/book2.png">
+            <p>Python从入门到实践</p>
+            <p><span class="price">￥99.8</span><span class="e_book">数字书</span></p>
+        </div>
+        <div class="list">
+            <img src="img/book3.png">
+            <p>案例学web前端开发</p>
+            <p><span class="price">￥49.8</span><span class="e_book">数字书</span></p>
+        </div>
+        <div class="list">
+            <img src="img/book4.png">
+            <p>玩转C语言程序设计</p>
+            <p><span class="price">￥49.8</span><span class="e_book">数字书</span></p>
+        </div>
+        <div class="list">
+            <img src="img/book5.jpg">
+            <p>Java学习黄金组合套装</p>
+            <p><span class="price">￥209.4</span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .cont{                                 /*类选择器设置页面的整体大小以及背景图片*/
+            width: 1536px;                     /*设置页面的宽度为1536像素*/
+            height: 840px;                     /*设置页面的高度为840像素*/
+            margin:0 auto;                     /*设置页面外边距上下为0，左右为自适应*/
+            text-align: center;                /*文字对齐方式居中对齐*/
+            background: url("img/bg.jpg");  /*为页面设置背景图片*/
+        }
+        h1{                                    /*标记选择器选择<h1>标题标记*/
+            padding-top: 80px;                 /*设置向上的内边距*/
+        }
+        .txt{                                  /*使用类选择器，改变主题内容的样式*/
+            line-height: 30px;                 /*设置行高为30像素*/
+            margin: 0 auto;                    /*设置主体部分的外边距*/
+            text-align: center;                /*设置文字的对其方式为居中对齐*/
+            width: 650px;                      /*设置主体部分宽度为650像素*/
+            font-size: 20px;                   /*设置文字的大小*/
+        }
+        .top{                       /*类选择器中第一行文字的样式*/
+            font-size: 30px;                   /*设置第一行文字的字体*/
+            line-height: 90px;                 /*设置第一行文字的行高*/
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{                               /*设置鼠标停在超链接上的样式*/
+            text-decoration: underline;        /*鼠标滑过超链接时，文字下方出现下划线*/
+            color:#B49668;                     /*设置鼠标停在超链接上时的文字颜色*/
+        }
+    </style>
+</head>
+<body>
+<div class="cont">
+    <h1><a href="#">vivo X9s</a></h1>
+    <p class="txt"><span class="top">更强大的分屏多任务3.0</span><br>
+    新增对QQ浏览器、天猫等应用的分屏功能，大幅增加了可以一平二用的场景，不但可以边看视频边回复，更可以一边聊天一边购物、写文档、回邮件、看新闻</p>
+    <img src="img/phone.png">
+</div>
+</body>
+</html>
