@@ -1,0 +1,6 @@
+print("Stay hungry，Stay foolish")
+print("I succeeded, because I wanted to succeed, I did not hesitate ")
+print("The real talent is resolute aspirations")
+print("The miracle appear in bad luck")
+print("Without great aspirations, there would be no great genius")
+print("Life is a gem that nature pays man to carve")

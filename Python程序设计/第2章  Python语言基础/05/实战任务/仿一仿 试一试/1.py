@@ -1,0 +1,9 @@
+age = int(input("请输入你的年龄："))     # 输入年龄，需要转换为整型
+days = 365*age                            # 将年转换为天
+hours = days*24                           # 将天转换为小时
+minutes = days*24*60                      # 将天转换为分
+secods = days*24*60**2                    # 将天转换为秒
+print("你已经过了：", days, "天")         # 输出度过的天数
+print("你已经过了：", hours, "小时")      # 输出度过的小时
+print("你已经过了：", minutes, "分钟")    # 输出度过的分钟
+print("你已经过了：", secods, "秒")       # 输出度过的秒
