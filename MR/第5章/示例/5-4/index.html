@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ聊天</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .cont {         /*设置页面大小背景等*/
+            width: 595px;
+            height: 540px;
+            margin: 20px auto;
+            border: 1px solid #ebebeb;
+            background: url("img/bg.png") no-repeat;
+        }
+
+        p {
+            height: 400px;
+        }
+
+        form {         /*设置表单的高度*/
+            width: 590px;
+        }
+
+        textarea {        /*设置文本域样式*/
+            display: block;
+        }
+
+        input {       /*设置按钮样式*/
+            float: right;
+            padding: 5px 20px;
+            border-radius: 3px;
+            background-color: #fff;
+            border: 1px solid #8d8d8d;
+            margin: 5px 10px;
+        }
+
+        .enter {
+            background-color: #0AA8F8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cont">
+    <p></p>
+    <form>
+        <textarea cols="80" rows="6" autofocus></textarea><!--文本域-->
+        <input type="button" value="关闭" class="enter">
+        <input type="button" value="发送">
+    </form>
+</div>
+</body>
+</html>

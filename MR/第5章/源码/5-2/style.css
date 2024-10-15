@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*css document*/
+
+.cont{                      /*设置页面的整体样式*/
+    margin: 0 auto;         /*设置页面的整体外间距*/
+    padding-top: 210px;
+    width: 1050px;
+    background: url("img/bg.png") no-repeat;
+}
+
+[type="text"]{              /*设置单行文本框的样式*/
+    margin-left: 10px;      /*设置向左的外边距*/
+    height: 30px;           /*设置单行文本框的高度*/
+    width: 230px;         
+}
+label{         
+    display: block;         /*设置其显示方式为块级显示*/
+    margin: 10px 70px;      /*设置外边距*/
+}
+.cont>div>:first-child{ /*设置其他问题的样式*/
+    color: white;
+	height: 40px;           /*设置高度*/
+    line-height: 40px;      /*设置文字行高*/
+    padding-left: 50px;     /*设置向左内间距*/
+    background: #6dc5ef;    /*设置背景颜色*/
+}

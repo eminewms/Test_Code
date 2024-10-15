@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+.cont {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+.bom {
+	height: 40px;
+	margin-top: 5px;
+	border: 1px solid #d1ccc7;
+}
+.bom li {
+	list-style: none;
+	float: left;
+	line-height: 40px;
+	width: 90px;
+}
+.bom>:first-child {
+	width: 120px;
+	background: #f7f5f5;
+}

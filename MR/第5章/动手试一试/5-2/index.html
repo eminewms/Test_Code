@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送邮件</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+        .cont{
+            padding: 20px;
+            width: 800px;
+            margin: 20px auto;
+            background: rgba(81,188,255,0.56);
+        }
+        p{
+            height: 30px;
+            line-height: 30px;
+        }
+        .left{
+            padding-left: 65px;
+            height: 20px;
+            line-height: 20px;
+        }
+        a{
+            font-size: 12px;
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        textarea{
+            margin-left: 25px;
+        }
+        .text{
+            width: 650px;
+            margin-left: 25px;
+        }
+        .right{
+            margin: 0 20px;
+        }
+        .button{
+            font-size: 12px;
+            padding: 5px 10px;
+            border: transparent;
+            border-radius: 5px;
+            background: #00BCD4;
+        }
+    </style>
+</head>
+<body>
+<div class="cont">
+    <p><span>收件人</span><input type="text" class="text"></p>
+    <p><span>主&nbsp;题</span><input type="text" class="text"></p>
+    <p class="left"><a href="#">添加附件</a>&nbsp;&nbsp;<a href="#">在线文档</a></p>
+    <div><span style="vertical-align: top">正&nbsp;文</span><textarea cols="90" rows="5"></textarea></div>
+    <p class="left">
+        <input type="button" value="直接发送" class="button">
+        <input type="button" value="存草稿" class="button">
+        <input type="button" value="其他选项" class="button">
+    <span class="right">是否保存到已发送</span>
+        <label><input type="radio" name="setTime"> 是</label>
+        <label><input type="radio" name="setTime"> 否</label>
+    </p>
+</div>
+</body>
+</html>

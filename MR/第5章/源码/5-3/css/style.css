@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {                     /*清除所有标签的默认内外边距*/
+	padding: 0;
+	margin: 0;
+}
+
+.top{
+	background: #bcd44b;
+	padding: 1px 20px;
+}
+.top h2{
+	margin: 10px 0;
+}
+.top>p{
+	color: #ed7c49;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.cont {                    /*设置留言板的整体大小以及背景颜色*/
+	width: 800px;
+	height: 500px;
+	margin: 20px 0 0 480px;
+	background: rgba(255,255,255,1.00);
+	border: 1px silver solid;
+}
+h4 {                             /*设置文本框上面的文字样式*/
+	margin-left: 20px;
+	width: 760px;
+	line-height: 39px;
+}
+.send {                             /*设置“主人寄语”四个字的样式*/
+	height: 35px;
+	width: 760px;
+	line-height: 35px;
+}
+.owner {                                                  /*设置文本域的样式*/
+	margin: 5px 20px 20px 20px;
+}
+.edit {
+	width: 120px;
+	float: left;
+}
+[type="button"] {                             /*设置下方“发表”按钮的样式*/
+	margin: 0 10px 0 20px;
+	height: 30px;
+	width: 70px;
+	background: rgba(237,124,73,1.00);
+	border: 1px solid rgba(237,124,73,1.00);
+}
