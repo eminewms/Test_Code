@@ -1,0 +1,29 @@
+
+table {
+    text-align: center;
+    border: 1px solid #f00;
+    font: normal 16px/40px "";
+    border-top-color: transparent;
+}
+
+caption {
+    font: bold 40px/110px "";
+    letter-spacing: 10px;
+}
+
+td {
+    border-top: 1px solid #f00;
+    border-left: 1px solid #f00;
+}
+
+tr > :first-child {
+    border-left-color: transparent;
+}
+
+[bgcolor="#ddffdf"] td {
+    border-right: 1px solid #f00;
+    border-left: 1px solid #f00;
+    font-weight: bold;
+    text-indent: 50px;
+    text-align: left;
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*css document*/
+
+* {      /*清除所有标签的默认内外边距*/
+    padding: 0;
+    margin: 0;
+}
+
+.cont {      /*设置页面整体大小和位置*/
+    margin: 20px auto;
+    width: 870px;
+    height: 400px;
+}
+.nav {            /*设置上方横向的导航的样式*/
+    height: 40px;
+    width: 685px;
+    border-bottom: 3px solid #ff2832;
+}
+
+.nav > li {           /*设置上方横向的导航的列表项样式*/
+    list-style: none;      /*清除列表项的默认样式*/
+    text-align: center;      /*设置文字水平居中显示*/
+    float: left;
+    font: bold 18px/47px "宋体";
+    width: 110px;
+    height: 40px;
+}
+.nav > li:hover {           /*设置上方横向的导航的列表项样式*/
+    background: #ff4d5a;
+    color: #fff;
+}
+.nav > :first-child {      /*设置左侧导航的第一个列表项样式*/
+    background: #ff4d5a;
+    width: 150px;
+}
+.right{
+    width: 685px;
+}
+
