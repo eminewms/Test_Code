@@ -1,0 +1,41 @@
+
+@charset "utf-8";
+/*css document*/
+
+*{                        /*清除页面中默认的内外边距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                    /*设置页面的整体样式*/
+    width: 1115px;        /*设置页面的整体大小*/
+    height: 800px;
+    margin: 20px auto;    /*设置页面的整体外边距*/
+    padding:154px 0 0 250px;
+    background: url("../img/bg.jpg") no-repeat;
+}
+
+.cont dl{              /*设置定义列表的样式*/
+    border: 1px solid #e6e6e6;/*添加边框*/
+    margin: 20px 10px;  /*改变其外边距*/
+    float: left;         /*设置侧边导航以及积分商品的浮动样式*/
+}
+.cont dt img{      /*设置商品图片的样式*/
+    padding: 20px;/*设置其内边距*/
+    width: 180px;
+}
+dd{                 /*设置文字内容的样式*/
+    background: #f0f2f7;/*设置文字的背景颜色*/
+    padding: 20px 10px;/*设置文字的内边距*/
+}
+.name{            /*设置第一行文字内容的样式*/
+    padding-bottom: 10px;
+}
+.credits{/*设置学分的样式*/
+    color: #f00;
+}
+.exchange{   /*设置“去兑换”的样式*/
+    float: right;/*设置向右浮动*/
+    color: #447BD3;
+    padding: 4px 6px;
+    border: 1px solid #447BD3;
+}

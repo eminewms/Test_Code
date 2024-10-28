@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滚动显示最新动态</title>
+</head>
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .cont{
+        width: 500px;
+        height: 200px;
+        background: rgba(158, 158, 158, 0.19);
+        padding: 20px;
+
+
+        margin: 20px auto;
+    }
+    h2{
+        border-left: 5px solid #0c79b1;
+        height: 30px;
+
+        padding-left: 10px;
+    }
+    .outer{
+        margin-top: 15px;
+        height: 155px;
+        position: relative;
+        overflow: hidden;
+    }
+    .inner{
+        position: absolute;
+width: 500px;
+        height: 320px;
+        top:0;
+        animation: 7s ease normal margin infinite;
+    }
+    li{
+        list-style: none;
+        height: 40px;
+        line-height: 40px;
+    }
+    @keyframes margin {
+        0%{top: 0}
+        25%{ top: -40px;}
+        50%{ top: -80px;}
+        75%{ top: -120px;}
+        100%{ top: -160px;}
+    }
+</style>
+<body>
+<div class="cont">
+    <h2>最新动态</h2>
+    <div class="outer">
+        <ul class="inner">
+            <li>恭喜 难念的经 在【幸运大抽奖】活动中获得奖品：v1会员（3个月）</li>
+            <li>恭喜 阿呆 在【幸运大抽奖】活动中获得奖品：10元抵用券</li>
+            <li>恭喜 az明 在【幸运大抽奖】活动中获得奖品：60学分</li>
+            <li>恭喜 春风十里 在【幸运大抽奖】活动中获得奖品：v3会员（10天）</li>
+            <li>恭喜 跟蜗牛赛跑 在【幸运大抽奖】活动中获得奖品：200学分</li>
+            <li>恭喜 花非花 在【幸运大抽奖】活动中获得奖品：20元抵用券</li>
+            <li>恭喜 小明明 在【幸运大抽奖】活动中获得奖品：2折优惠券</li>
+            <li>恭喜 酱紫 在【幸运大抽奖】活动中获得奖品：200学分</li>
+            <!--<li>恭喜 难念的经 在【幸运大抽奖】活动中获得奖品：v1会员（3个月）</li>-->
+            <!--<li>恭喜 难念的经 在【幸运大抽奖】活动中获得奖品：v1会员（3个月）</li>-->
+            <!--<li>恭喜 难念的经 在【幸运大抽奖】活动中获得奖品：v1会员（3个月）</li>-->
+            <!--<li>恭喜 难念的经 在【幸运大抽奖】活动中获得奖品：v1会员（3个月）</li>-->
+        </ul>
+    </div>
+</div>
+</body>
+</html>

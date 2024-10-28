@@ -1,0 +1,76 @@
+@charset "utf-8";
+/*css document*/
+
+*{                             /*清除页面中默认的内外边距*/
+    margin: 0;
+    padding: 0;
+}
+.cont{                        /*设置页面的整体样式*/
+    width: 1050px;            /*设置整体宽度*/
+    height: 650px;
+    padding-top: 340px;
+    margin: 0 auto;           /*设置外边距*/
+    border: 1px solid #dbdbdb;/*设置边框*/
+    text-align: center;
+    background: url("../img/bg.jpg") no-repeat #f0f0f0;
+}
+
+
+dl{                          /*设置定义列表样式*/
+    width: 390px;
+    height: 200px;
+    float: left;             /*设置浮动*/
+    padding: 20px 35px;      /*设置内边距*/
+    background: #fff;
+    margin: 15px;
+}
+
+dd,dt{                       /*设置图片和文字的总样式*/
+    float: left;             /*设置浮动*/
+}
+dt img{                      /*设置图片和文字的总样式*/
+    margin-top: 15px;        /*设置向上的外边距*/
+    width: 135px;            /*设置宽度*/
+}
+dt:hover img{                /*设置书包滑过图片时的样式*/
+    transform: translate(20px,0);  /*设置水平向左平移20像素*/
+    transition: 1s ease all; /*设置变换效果为逐渐过渡*/
+}
+dd{                          /*设置文字的样式*/
+
+    width: 220px;            /*设置宽度*/
+    margin-left: 30px;
+    text-align: left;
+}
+.name{             /*设置图书名称样式*/
+    margin: 23px auto 15px       /*设置文字外间距*/
+}
+.book{
+    width: 980px;
+    height: 400px;
+    margin: 0 auto;
+}
+.gray{       /*设置文字颜色*/
+    color: rgb(107, 109, 109);
+}
+.red{
+    color: rgba(255,12,42,0.56);
+    font-weight: bold;       /*设置文字粗细*/
+}
+.item{
+    height: 25px;
+    font:normal 14px/25px "";       /*设置文字粗细 字号行高以及字体*/
+}
+.price{
+    margin-top: 20px;
+}
+.see{
+    float: right;
+    text-align: center;
+    width: 75px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #0c79b1;
+    color: #0c79b1;
+}

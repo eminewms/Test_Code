@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .cont {
+            width: 690px;
+            height: 260px;
+            margin: 0 auto;
+            background: rgb(233, 180, 236);
+        }
+
+        img {
+            padding: 30px;
+            transition: 2s ease all;                /*设置所有属性参与过渡*/
+        }
+
+        .cont:hover img {
+            transform-origin: center;                       /*设置图片旋转点在其中心处*/
+            transform: translate(400px, 0) rotate(360deg);/*设置图片向右平移400像素并且旋转350度*/
+        }
+    </style>
+</head>
+<body>
+<div class="cont"><img src="img.png" width="200"></div>
+</body>
+</html>

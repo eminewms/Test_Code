@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 14px;
+}
+body {
+	background: rgb(247,247,245);
+}
+.hot {
+	width: 1200px;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 30px auto;
+}
+h2 {
+	width: 1200px;
+	text-align: center;
+	font-size: 24px;
+	margin: 30px auto;
+}
+
+.box dt {
+	width: 292px;
+	height: 242px;
+}
+.box{
+	float: left;
+	width: 290px;
+	height: 380px;
+	margin: 5px;
+	background: #fff;
+	text-align: center;
+}
+.box img {
+	width: 172px;
+	height: 172px;
+	padding: 50px 60px 20px;
+}
+.hot img:hover {
+	transform: translateX(-20px);
+}
+.show p{
+	width: 290px;
+	text-align: center;
+	padding-top: 10px;
+	font:bold 16px/20px "";
+	clear: both;
+}
+.show  .font{
+	font:normal 16px/20px "";
+}
+.color {
+	color: #f00;
+}
+

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*css document*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: block;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    font:normal 18px/40px "宋体";
+    list-style: none;
+    color: #000;
+}
+
+.list {
+    width: 710px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: rgba(96, 178, 255, 0.7);
+}
+.list > li {
+    float: left;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+
+.list > li:hover {
+    border-color: #ff7f50;
+    background: #ff7f50;
+    color: #fff;
+    cursor: pointer;
+}
+/*二级导航样式*/
+.drop {
+    position: absolute;
+    left: 0;
+    display: none;
+    top: 40px;
+    font: normal 16px/40px arial;
+}
+
+.drop li {
+    float: none;
+    border: 1px solid #ff7f50;
+    border-top: 0;
+}
+.list > li:hover .drop{
+    display: block;
+}
+.drop li:hover {
+    color: #fff;
+    background: #ff7f50;
+}
+
+
+
+
