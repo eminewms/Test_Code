@@ -1,0 +1,6 @@
+num= int(input("请输入一个数字："))
+new=range(3,num)
+sub=max(new)-min(new)
+add=max(new)+min(new)
+num%=(add-sub)
+print(num)

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>账号密码不为空验证</title>
+    <!--<link href="font/css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="cont">
+    <form action="#" name="form">
+        <div class="top">
+            <h4><img src="img/bg.jpg" height="26"> 注册<img src="img/bg.jpg" height="26"></h4>
+            <div class="left">
+                <label><span>用户昵称:</span><input type="text" id="petname" name="petname"> </label>
+                <label><span>密&nbsp;&nbsp;码:</span><input type="password" id="pass"></label>
+                <label><span>确认密码:</span><input type="password" id="confirmpass"></label>
+                <label><span>电子邮箱:</span><input type="email"></label>
+
+            </div>
+            <div class="right">
+                <label><span>姓名:</span><input type="text" id="name"> </label>
+                <p>性别:<label><input type="radio" name="sex"><span>男:</span></label><label><input type="radio" name="sex"><span>女:</span></label></p>
+                <label for="year"><span>出日:</span><input type="password" id="year">年<input type="text">月<input type="text">日</label>
+                <label><span>头像:</span><input type="file"></label>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4><img src="img/bg.jpg" height="26"> 本商城服务协议<img src="img/bg.jpg" height="26"> </h4>
+            <textarea></textarea>
+            <p><input type="submit" value="提&nbsp;交" onclick="panduan()"><input type="reset" value="重&nbsp;置"></p>
+        </div>
+
+
+    </form>
+</div>
+<script type="text/javascript">
+    function panduan(){
+        var form1=document.getElementsByName("form1")[0]
+        if(document.getElementById("petname").value==""){
+            alert("请输入昵称");
+        }
+        else if(document.getElementById("pass").value==""){
+            alert("请输入密码")
+        }
+        else if(document.getElementById("confirmpass").value==""){
+            alert("请确认密码")
+        }
+        else if(document.getElementById("name").value==""){
+            alert("请输姓名")
+        }
+        else{
+            alert("注册成功");
+        }
+    }
+</script>
+</body>
+</html>

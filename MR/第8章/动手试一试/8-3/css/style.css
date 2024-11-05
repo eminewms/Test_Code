@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*css document*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: block;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    font:normal 18px/40px "宋体";
+    list-style: none;
+    color: #000;
+}
+
+.list {
+    width: 704px;
+    height: 40px;
+    margin: 20px auto;
+    background-color:#8BC34A;
+}
+/*设置滑块样式*/
+.list p {
+    width: 140px;
+    height: 5px;
+    position: absolute;
+    top: 55px;
+    background: #ff7f50;
+    transition: 0.5s ease all;
+}
+
+.list > li {
+    float: left;
+    position: relative;
+
+}
+
+.list > li:hover {
+    color: #ff7f50;
+    cursor: pointer;
+}
+
+
+
+
+
