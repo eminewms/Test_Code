@@ -1,0 +1,40 @@
+<!DOCTYPE html >
+<head>
+    <meta charset="UTF-8">
+    <title>带导航窗格的图片展示</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        function change(i) {
+            for (var k = 0; k < $(".left li").length; k++) {
+                $(".left li").eq(k).css("border","2px solid #fff");
+                $(".right img").eq(k).css({"width":"20%","top":"-120px","left":"200px","opacity":"0","height":"auto"});
+                if (i == k) {
+                    $(".right img").eq(k).css({"width":"100%","top":"0px","left":"0px","opacity":"1","height":"329px"});
+                    $(".left li").eq(i).css("border","2px solid #595959");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="cont">
+    <ul class="left">
+        <li onclick="change(0)"><img src="img/1.jpg" alt=""/></li>
+        <li onclick="change(1)"><img src="img/2.jpg" alt=""/></li>
+        <li onclick="change(2)"><img src="img/3.jpg" alt=""/></li>
+        <li onclick="change(3)"><img src="img/4.jpg" alt=""/></li>
+        <li onclick="change(4)"><img src="img/5.jpg" alt=""/></li>
+    </ul>
+    <div class="right">
+        <img id="img1" src="img/1.jpg" alt=""/>
+        <img id="img2" src="img/2.jpg" alt=""/>
+        <img id="img3" src="img/3.jpg" alt=""/>
+        <img id="img4" src="img/4.jpg" alt=""/>
+        <img id="img5" src="img/5.jpg" alt=""/>
+    </div>
+</div>
+
+</body>
+</html>

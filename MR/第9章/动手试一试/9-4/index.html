@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>jQuery五星级评分代码</title>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <style>
+        body, li, p, ul {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        ul, li, ol {
+            list-style: none;
+        }
+
+        /* 重置文本格式元素 */
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /*星星样式*/
+        .content {
+            width: 600px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .title {
+            font-size: 14px;
+            background: #dfdfdf;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .block {
+            width: 100%;
+            margin: 0 0 20px 0;
+            padding-top: 10px;
+            padding-left: 50px;
+            line-height: 21px;
+        }
+
+        .block .star_score {
+            float: left;
+        }
+
+        .star_list {
+            height: 21px;
+            margin: 50px;
+            line-height: 21px;
+        }
+
+        .block p, .block .evaluation {
+            padding-left: 20px;
+            line-height: 21px;
+            display: inline-block;
+        }
+
+        .block p span {
+            color: #C00;
+            font-size: 16px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .star_score {
+            width: 110px;
+            height: 21px;
+            position: relative;
+        }
+
+        .star_score a {
+            height: 21px;
+            display: block;
+            text-indent: -999em;
+            position: absolute;
+            left: 0;
+        }
+
+        #start .star_score {
+            background: url(images/starky.png);
+        }
+
+        #start .star_score a.clibg {
+            background: url(images/starsy.png);
+            left: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="content">
+    <p class="title">五颗星评分</p>
+    <div id="start" class="block">
+        <div class="star_score"></div>
+        <p style="float:left;">您的评分：<span class="fenshu">0</span> 分</p>
+        <div class="evaluation">请给出您的评价</div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var star_w = 22;//定义每个星星图标宽度
+        var types = ["很不满意", "不满意", "一般", "满意", "非常满意"];//定义评价数组
+        var score = $("#start").find(".fenshu");
+        var stars = $("#start").find(".star_score");
+        var eva = $("#start").find(".evaluation");
+        var clicked_index;
+        var star_num = 5;//定义星星图标个数
+        //添加星星图标
+        for (var i = 0; i < 5; i++) {
+            var star = $("<a href='javascript:void(0)'></a>");
+            star.css({"left": 0, "width": star_w * (i + 1), "z-index": star_num - i});
+            star.appendTo(stars);
+        }
+        stars.find("a").each(function (index, element) {
+            $(this).click(function () {
+                clicked_index = index;//记录当前索引
+            });
+            $(this).mouseenter(function () {
+                stars.find("a").removeClass("clibg");//移除样式
+                $(this).addClass("clibg");//添加样式
+                score.text(index + 1);//显示分数
+                eva.text(types[index]);//显示评价
+            });
+            $(this).mouseleave(function () {
+                if (clicked_index >= 0) {
+                    stars.find("a").removeClass("clibg");//移除样式
+                    stars.find("a").eq(clicked_index).addClass("clibg");//添加样式
+                    score.text(clicked_index + 1);//显示分数
+                    eva.text(types[clicked_index]);//显示评价
+                } else {
+                    stars.find("a").removeClass("clibg");
+                    score.text(0)//显示分数
+                    eva.text("请给出您的评价");//重置评价
+                }
+            })
+        });
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.cont {        /*设置页面大小，背景图等样式*/
+    width: 640px;
+    height: 290px;
+    margin: 20px auto;
+    background: url(../images/bg1.jpg);
+    text-align: center;
+}
+
+#mr-show {        /*设置文本框的样式*/
+    margin-top: 100px;
+    width: 260px;
+    height: 62px;
+    border-radius: 50px;
+    background: #FF0;
+    font-size: 36px;
+    text-align: center;
+}
+
+span {        /*设置提示文字的样式*/
+    color: #FFF;
+    font-size: 30px;
+}

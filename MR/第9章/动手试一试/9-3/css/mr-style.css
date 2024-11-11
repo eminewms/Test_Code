@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mr-bg {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#imgcan {
+	display: block;
+	cursor: pointer;
+}
+#glasscan {
+	display: none;
+	border: 1px solid #ccc;
+	position: absolute;
+	border-radius: 101px;
+	-webkit-border-radius: 101px;
+	-o-border-radius: 101px;
+	-moz-border-radius: 101px;
+}
+.mr-bg {
+	margin: 0px auto;
+	width: 800px;
+	height: 610px;
+	text-align: center;
+	border: 1px solid #f00;
+	background: url(../images/bg.jpg);
+}
+dl {
+	margin-left: 80px;
+}
+dd {
+	height: 100px;
+}
+dd div {
+	float: left;
+	margin: 25px 5px;
+	height: 50px;
+	width: 50px;
+	border: 2px solid #ff0000;
+}
+dd .mr-left~div {
+	border: 2px solid #999;
+}

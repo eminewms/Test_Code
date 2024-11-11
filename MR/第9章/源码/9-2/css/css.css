@@ -1,0 +1,140 @@
+@charset "utf-8";
+/*css document*/
+*{                                 /*清除元素默认的内外间距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{
+    width: 895px;
+    margin: 20px auto;
+}
+.top {                       /*顶部样式*/
+    width: 810px;
+    height: 70px;
+    margin: 0 50px;
+    position: relative;
+    font:bolder 14px/70px "";
+    background-color: #dedede;
+}
+
+.bgcolor:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-width: 0 0 70px 70px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.top:after, .bgcolor:after {                          /*通过在<div>的两侧添加三角形实现平行四边形的样式*/
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-width: 70px 70px 0px 0px;
+    border-color: transparent #f00 transparent transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.bgcolor:after {                          /*设置活动标题的右侧三角形样式*/
+    border-color: transparent #dedede transparent transparent;
+}
+.top:after {                          /*设置当前活动的三角形颜色*/
+    border-color:  transparent #fff  transparent  transparent;
+
+}
+.top > p {                          /*设置图片和文字内容的公共样式*/
+    display: inline-block;
+    width: 265px;
+    height: 70px;
+}
+
+.top span {
+    float: left;
+}
+
+.bgcolor {                          /*设置当前活动的背景样式*/
+    position: relative;
+    background: #f00;
+    color: #fff;
+}
+
+.bgcolor > :first-child {                          /*设置当前活动的提示文字样式*/
+    margin: 10px 0px 10px 65px;
+    width: 70px;
+    line-height: 25px;
+}
+#time1, #time2, #time3, #time4 {                          /*设置时间的文字样式*/
+    font: bolder 18px/70px "";
+}
+.top>.font{                          /*设置其余三场活动的样式*/
+    width: 160px;
+}
+.font :last-child{                          /*设置第一长活动的样式*/
+    margin: 20px 15px;                          /*设置外边距*/
+    height: 30px;                          /*设置高度*/
+    padding: 0px 15px;                          /*设置左右内边距*/
+    border: 1px solid #fff;                          /*设置边框*/
+    border-radius: 20px;                          /*设置圆角*/
+    font:normal 12px/35px "";                          /*设置文字样式*/
+
+}
+.bottom{
+    width: 895px;
+    margin: 0 auto;
+}
+.item{                             /*设置商品信息样式*/
+    width: 415px;                   /*设置页面的整体大小*/
+    height: 200px;
+    margin: 10px 15px;
+    float: left;
+    border: 1px solid #f00;        /*设置添加边框*/
+    font-size: 20px;
+}
+.item>div{                          /*设置图片和文字内容的公共样式*/
+    padding-top: 10px;                 /*设置上边距*/
+    float: left;                       /*设置浮动*/
+}
+.txt>p{                                /*设置文字部分的样式*/
+    margin-left: 20px;                  /*设置上边距*/
+}
+.txt>:first-child+p{                  /*设置第二行文字样式*/
+    color: #f00;                        /*设置字体颜色*/
+    margin: 20px 20px 15px;             /*设置外边距*/
+    font-size: 14px;
+}
+.price{                                 /*设置价额部分的样式*/
+    border-top: 1px dashed #AEBDCC;    /*添加上边框*/
+    padding-top: 15px;                   /*设置向上的内间距*/
+}
+
+.price>:first-child{                   /*设置现在价格的样式*/
+    color: #f00;                         /*设置文字颜色*/
+    font-size: 20px;                      /*设置字号*/
+}
+
+.price>:last-child{                     /*设置原价样式*/
+    color: #AEBDCC;                      /*设置文字颜色*/
+    font-size: 14px;                      /*设置字号*/
+    margin-left: 40px;                    /*设置左间距*/
+    text-decoration: line-through;       /*添加删除线*/
+}
+.price+p>input{                          /*按钮的样式*/
+    width: 120px;                          /*设置按钮大小*/
+    height: 30px;
+    margin-top: 20px;                      /*设置上间距*/
+}
+.price+p>:first-child{                  /*设置第一个按钮的样式*/
+    background: none;                     /*添加背景*/
+    font-size: 14px;                      /*设置文字大小*/
+    border: 1px solid #f00;             /*设置边框*/
+}
+.price+p>:last-child{                  /*设置第二个按钮的样式*/
+    background: #f00;                    /*设置背景颜色*/
+    color: #fff;                         /*设置文字颜色*/
+    border: none;                        /*清除边框*/
+}
